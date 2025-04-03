@@ -27,6 +27,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray,
+#custom-brightness,
 #workspaces {
 	background: #15141b;
 	padding: 0 0.5em;

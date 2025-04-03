@@ -1,0 +1,84 @@
+format = """\
+[](fg:#a277ff)\
+[ $username](bg:#a277ff fg:#15141b)\
+[](fg:#a277ff bg:#29263c)\
+$directory\
+[](fg:#29263c bg:#82e2ff)\
+$deno\
+$dotnet\
+$golang\
+$lua\
+$python\
+$rust\
+[](fg:#82e2ff bg:#ffca85)\
+$git_branch\
+$git_status\
+$git_metrics\
+[](fg:#ffca85 bg:#030B16)\
+$fill\
+$cmd_duration\
+[](fg:#a277ff)\
+$time\
+[\uE0B4](fg:#a277ff)
+$character\
+"""
+
+[fill]
+symbol = " "
+
+[directory]
+format = "[   $path ]($style)"
+style = "fg:#edecee bg:#29263c"
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "  "
+style = "fg:#1C3A5E bg:#ffca85"
+
+[git_status]
+format = '[$all_status]($style)'
+style = "fg:#1C3A5E bg:#ffca85"
+
+[git_metrics]
+format = "([+$added]($added_style))[]($added_style)"
+added_style = "fg:#1C3A5E bg:#ffca85"
+deleted_style = "fg:bright-red bg:235"
+disabled = false
+
+[hg_branch]
+format = "[ $symbol$branch ]($style)"
+symbol = " "
+
+[cmd_duration]
+format = "[ 󱎫 $duration ]($style)"
+style = "fg:#edecee"
+
+[character]
+success_symbol = '[ ➜](bold green) '
+error_symbol = '[ ✗](#E84D44) '
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bold bg:#a277ff"
+format = '[[ 󱑍 $time ](bg:#a277ff fg:#61ffca)]($style)'
+
+[dotnet]
+disabled = false
+style = "bg:#82e2ff fg:#15141b"
+detect_extensions = ["csproj", "fsproj", "xproj", "sln"]
+symbol = " "
+format = "[ $symbol($version) ( $tfm)]($style)"
+
+[golang]
+style = "bg:#82e2ff fg:#15141b"
+format = "[ $symbol($version )]($style)"
+
+[python]
+style = "bg:#82e2ff fg:#15141b"
+format = "[ ${symbol}${pyenv_prefix}(${version} )((${virtualenv}) )]($style)"
+
+[username]
+style_user = "bold bg:#a277ff fg:#15141b"
+format = "[$user ]($style)"
+show_always = true
