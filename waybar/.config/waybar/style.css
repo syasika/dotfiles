@@ -28,6 +28,8 @@ window#waybar {
 #pulseaudio,
 #tray,
 #custom-brightness,
+#custom-pacman,
+#custom-notification,
 #workspaces {
 	background: #15141b;
 	padding: 0 0.5em;
