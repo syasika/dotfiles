@@ -1,0 +1,7 @@
+background-opacity = 0.8
+background-blur-radius = 9
+theme = Aura
+confirm-close-surface = false
+
+maximize=true
+window-theme = ghostty
