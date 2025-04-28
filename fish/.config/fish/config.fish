@@ -25,6 +25,7 @@ alias docker-compose='podman-compose'
 alias projects='cd /mnt/WSDStorage/Shane/Git/'
 #alias tailwindcss='/home/shane/.local/bin/Tailwindcss/tailwindcss-linux-x64'
 alias cls='clear'
+alias pcr='sudo pacman -R $(pacman -Qtdq)'
 
 set -x MANPAGER 'nvim +Man!'
 
