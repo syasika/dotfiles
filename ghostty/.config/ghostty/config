@@ -1,5 +1,5 @@
-background-opacity = 0.65
-background-blur = 2
+# background-opacity = 0.65
+# background-blur = 2
 theme = Aura
 confirm-close-surface = false
 

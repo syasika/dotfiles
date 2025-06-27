@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export DOCKER_HOST:unix\x3a///run/user/1000/podman/podman\x2esock
+SETUVAR --export DOCKER_HOST:unix\x3a///var/run/docker\x2esock
 SETUVAR --export TESTCONTAINERS_RYUK_DISABLED:true
 SETUVAR __fish_initialized:3800
 SETUVAR _fisher_edc_2F_bass_files:\x7e/\x2econfig/fish/functions/__bass\x2epy\x1e\x7e/\x2econfig/fish/functions/bass\x2efish
@@ -36,4 +36,4 @@ SETUVAR fish_pager_color_description:yellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/shane/openmw49\x1e/home/shane/\x2elocal/bin/SonarQube/bin\x1e/home/shane/\x2elocal/bin/Tailwind\x1e/home/shane/go/bin\x1e/home/shane/\x2edotnet/tools\x1e/home/shane/\x2elocal/bin/Godot
+SETUVAR fish_user_paths:/home/shane/\x2elocal/bin\x1e/home/shane/\x2econfig/emacs/bin\x1e/home/shane/\x2eemacs\x2ed/bin\x1e/home/shane/openmw49\x1e/home/shane/\x2elocal/bin/SonarQube/bin\x1e/home/shane/\x2elocal/bin/Tailwind\x1e/home/shane/go/bin\x1e/home/shane/\x2edotnet/tools\x1e/home/shane/\x2elocal/bin/Godot
