@@ -1,6 +1,7 @@
 # background-opacity = 0.65
 # background-blur = 2
 theme = Aura
+# theme="/home/shane/.cache/wal/colors-ghostty"
 confirm-close-surface = false
 
 maximize=true
